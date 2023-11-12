@@ -1,1 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>DermAI</title>
+    <script src="script.js"></script>
+</head>
+<body>
+    <div id="container">
 
+        <!-- Display the uploaded image -->
+        <img id="selected-image" src="choose-image.png" alt="Select an image">
+
+        <!-- Loading indicator -->
+        <div id="loading-indicator">Loading...</div>
+
+        <form id="upload-form">
+          <!-- Add a label for the image input -->
+          <label for="image-input" id="custom-button">Pick Image from Gallery</label>
+          <input type="file" id="image-input" accept="image/*" onchange="previewImage()">
+        </form>
+
+        <!-- Description -->
+        <div id="description">Prediction Result will be displayed after the image is uploaded</div>
+
+    </div>
+</body>
+</html>

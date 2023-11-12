@@ -1,1 +1,74 @@
+html {
+	font-size: 10px;
+}
 
+@media only screen and (max-width:1024px) {
+	html {
+		font-size: 9.411764705882353px;
+	}
+}
+@media only screen and (max-width:768px) {
+	html {
+		font-size: 10px;
+	}
+}
+@media only screen and (max-width:400px) {
+	html {
+		font-size: 9.411764705882353px;
+	}
+}
+
+html, body {
+	height: 100%;
+}
+
+body {
+	background: #595959;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 1.7rem;
+	line-height: 3rem;
+	color: #6e6e6e;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+#container {
+    text-align: center;
+    position: relative;
+    top: -20%; /* Move the container upwards by 20% */
+}
+
+
+#image-input {
+    display: none; /* hide the default file input */
+}
+
+#custom-button {
+  background-color: #d9d20b;
+  color: #3f3f3f;
+  padding: 10px 15px;
+  cursor: pointer;
+}
+
+#selected-image {
+  max-width: 200px;
+  max-height: 200px;
+  margin-top: 10px;
+}
+
+#loading-indicator {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: none;
+  color: #d9d20b; /* Yellow color for the loading indicator */
+}
+
+#description {
+  margin-top: 20%; /* Add a margin of 20% at the top */
+  color: white; /* Color for the description text */
+}
