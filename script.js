@@ -28,3 +28,8 @@ function previewImage() {
       reader.readAsDataURL(file);
     }
   }
+
+  function toggleSlidingWindow() {
+    var slidingWindow = document.getElementById('sliding-window');
+    slidingWindow.style.bottom = slidingWindow.style.bottom === '-5%' ? '-100%' : '-5%';
+  }
