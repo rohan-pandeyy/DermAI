@@ -37,7 +37,13 @@
             <div id="close-window" onclick="toggleSlidingWindow()">Close</div>
             <!-- Content of the sliding window goes here -->
             <h2>Schedule</h2>
-            <p>Now I will kill myself.</p>
+
+            <!-- Container for the buttons -->
+            <div id="button-container">
+                <button class="sliding-button selected-button" onclick="selectButton(1)">Upcoming</button>
+                <button class="sliding-button" onclick="selectButton(2)">Completed</button>
+                <button class="sliding-button" onclick="selectButton(3)">Cancel</button>
+            </div>
         </div>
 
     </div>

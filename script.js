@@ -34,3 +34,14 @@ function turnOffSlidingWindow() {
   var slidingWindow = document.getElementById('sliding-window');
   slidingWindow.style.bottom = slidingWindow.style.bottom === '-5%' ? '-100%' : '-100%';
 }
+
+// Add a function to handle button selection
+function selectButton(buttonNumber) {
+  // Remove the 'selected-button' class from all buttons
+  document.querySelectorAll('.sliding-button').forEach(button => {
+    button.classList.remove('selected-button');
+  });
+
+  // Add the 'selected-button' class to the clicked button
+  document.querySelector(`.sliding-button:nth-child(${buttonNumber})`).classList.add('selected-button');
+}
