@@ -79,7 +79,9 @@ body {
 
 /* Navigation Bar */
 #navbar {
-    position: fixed;
+  /* Position a navbar at the bottom of the screen */
+    left: 0;
+    position: fixed; 
     bottom: 0;
     width: 100%;
     background-color: white;
@@ -96,7 +98,7 @@ body {
   #navbar img {
     width: 84px;
     height: 50px;
-    margin: 0 5px;
+    margin: 10%;
     cursor: pointer;
   }
 
