@@ -153,3 +153,20 @@ body {
     color: white; /* Text color for the selected button */
   }
   
+  #analyzing-text {
+    display: none;
+    font-weight: bold;
+    margin-top: 10px;
+    color:#d9d20b;
+  }
+  
+  #analyzing-text.loading:after {
+    content: 'Analyzing...';
+    animation: dots 1s infinite; /* Animation for the dots */
+  }
+  
+  @keyframes dots {
+    50% {
+      opacity: 0;
+    }
+  }

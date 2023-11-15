@@ -3,6 +3,7 @@ function previewImage() {
   var selectedImage = document.getElementById('selected-image');
   var customButton = document.getElementById('custom-button');
   var loadingIndicator = document.getElementById('loading-indicator');
+  var analyzingText = document.getElementById('analyzing-text');
   var description = document.getElementById('description');
 
   var file = input.files[0];
@@ -16,8 +17,31 @@ function previewImage() {
       selectedImage.src = e.target.result;
       customButton.style.display = 'none';
       loadingIndicator.style.display = 'none';
-      description.innerText = 'Image uploaded successfully! Check Diagnosis below!';
+      description.innerText = 'Image uploaded successfully! Check Diagnosis below! \n\n';
       description.style.display = 'block';
+
+      // Show the analyzing text
+      analyzingText.style.display = 'block';
+      analyzingText.classList.add('loading');
+      // Set a timeout to hide the analyzing text after 9 seconds
+      setTimeout(function () {
+      analyzingText.style.display = 'none';
+      analyzingText.classList.remove('loading');
+
+      // Display information text with typewriter effect
+      var informationText = "Based on the _______ examination and patient history, the diagnosis is acne vulgaris.";
+      var index = 0;
+
+      function printText() {
+        description.innerHTML += informationText.charAt(index);
+        index++;
+        if (index < informationText.length) {
+          setTimeout(printText, 50); // Adjust the timeout for the typing speed
+        }
+  }
+
+  printText();
+}, 9000);
     }
 
     reader.readAsDataURL(file);
