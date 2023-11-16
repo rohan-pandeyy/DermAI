@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <title>DermAI</title>
     <script src="script.js"></script>
 </head>
@@ -43,9 +44,39 @@
 
             <!-- Container for the buttons -->
             <div id="button-container">
-                <button class="sliding-button selected-button" onclick="selectButton(1)">Upcoming</button>
-                <button class="sliding-button" onclick="selectButton(2)">Completed</button>
-                <button class="sliding-button" onclick="selectButton(3)">Cancel</button>
+                <button class="sliding-button selected-button" onclick="selectButton(1)">Recommended Doctors</button>
+                <button class="sliding-button" onclick="selectButton(2)">Upcoming Appointments</button>
+                <button class="sliding-button" onclick="selectButton(3)">Previous Appointments</button>
+            </div>
+
+            <!-- Information box -->
+            <div id="information-box">
+                <!-- Circular profile picture -->
+                <div id="profile-picture"></div>
+
+                <!-- Name and Speciality -->
+                <div id="profile-info">
+                  <p id="name">Dr. Varun Tyagi</p>
+                  <p id="speciality">Dermatology & Venereology</p>
+                </div>
+
+                <!-- Date and time availability -->
+                <div id="availability-box">
+                    <div id="date-info">
+                        <i class="fa fa-calendar"></i>
+                        <p>Mon - Sat</p>
+                    </div>
+                    <div id="time-info">
+                        <i class="fa fa-clock-o"></i>
+                        <p>11am - 6pm</p>
+                    </div>
+                </div>
+
+                <!-- Map preview -->
+                <div id="map-preview">
+                    <!-- Replace the following with your map embed code -->
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3500.3690114259725!2d77.30462867617214!3d28.678606181985923!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390cfb9fdabb40d9%3A0xc618073a55981ec!2sPerfect%20Tyagi%20Hospital!5e0!3m2!1sen!2sin!4v1700111669565!5m2!1sen!2sin" width="330" height="150" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
             </div>
         </div>
 

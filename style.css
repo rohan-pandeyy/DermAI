@@ -134,12 +134,13 @@ body {
     display: flex;
     justify-content: space-around;
     margin-top: 20px; /* Add space between h2 and the button container */
+    margin-bottom: 20%;
     background-color: white; /* Common background color for the button container */
     border-radius: 15px; /* Round corners for the button container */
   }
   
   .sliding-button {
-    padding: 8px 35px;
+    padding: 9px 15px;
     background-color: white; /* Default background color for buttons */
     color: #d9d20b; /* Default text color for buttons */
     border: none;
@@ -153,6 +154,73 @@ body {
     color: white; /* Text color for the selected button */
   }
   
+  #information-box {
+    background-color: white;
+    border-radius: 15px;
+    padding: 20px;
+    margin-top: 5%; /* Add space between button-container and information-box */
+    text-align: left;
+    position: relative;
+  }
+  
+  #profile-picture {
+    width: 50px;
+    height: 50px;
+    background-color: rgb(78, 98, 209);
+    border-radius: 50%; /* Create a circular profile picture */
+    display: inline-block;
+    position: absolute; /* Positioned absolutely for top left */
+    margin-right: 20px; /* Add space between the profile picture and text */
+  }
+  
+  #profile-info {
+    display: inline-block;
+    vertical-align: top; /* Align text to the top */
+    padding-left: 70px;
+  }
+  
+  #name {
+    font-weight: bold;
+    color: black;
+    margin-bottom: 0; /* Remove the gap between name and speciality */
+    margin-top: 0; /* Align the name with the top of the profile picture */
+  }
+  
+  #speciality {
+    color: #797979; /* Example color for speciality */
+    margin: 0; /* Shortened margin property */
+    line-height: 20px;
+    font-weight: bold;
+  }
+
+  #availability-box {
+    background-color: #d9d20b;
+    border-radius: 10px;
+    padding: 5px;
+    margin-top: 10px; /* Add space between profile-info and availability-box */
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 5%;
+  }
+  
+  #date-info,
+  #time-info {
+    display: flex;
+    align-items: center;
+    margin: auto 10px;
+    font-weight: bold;
+  }
+  
+  #date-info i,
+  #time-info i {
+    margin-right: 10px;
+  }
+  
+  #date-info p,
+  #time-info p {
+    margin: 0;
+  }
+
   #analyzing-text {
     display: none;
     font-weight: bold;
