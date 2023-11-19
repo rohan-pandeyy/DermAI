@@ -58,7 +58,7 @@ body {
 #selected-image {
     max-width: 200px;
     max-height: 200px;
-    margin-top: 10px;
+    margin-top: 20%;
 }
 
 #loading-indicator {
@@ -237,4 +237,40 @@ body {
     50% {
       opacity: 0;
     }
+  }
+
+  /* Emergency */
+
+  #custom-sliding-window {
+    position: fixed;
+    top: 40px;
+    right: -101%; /* Initially positioned outside the view */
+    width: 98%;
+    height: 100%;
+    background-color: white;
+    border: 3px solid red;
+    border-radius: 15px;
+    transition: right 0.3s ease-in-out; /* Transition effect for sliding */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  #custom-close-window {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+  }
+  
+  #custom-sliding-content {
+    padding: 20px;
+    text-align: center; /* Center the content */
+  }
+
+  #custom-sliding-content img {
+    max-width: 70%; /* Make sure the image doesn't exceed the container width */
+    max-height: 70%; /* Make sure the image doesn't exceed the container height */
+    margin-top: -150px; /* Move the image up by 20px */
   }

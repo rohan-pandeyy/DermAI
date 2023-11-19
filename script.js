@@ -52,9 +52,20 @@ function previewImage() {
 function toggleSlidingWindow() {
   var slidingWindow = document.getElementById('sliding-window');
   slidingWindow.style.bottom = slidingWindow.style.bottom === '-5%' ? '-100%' : '-5%';
+  var customSlidingWindow = document.getElementById("custom-sliding-window");
+  customSlidingWindow.style.right = customSlidingWindow.style.right === '0px' ? '-101%' : '-101%';
 }
 
 function turnOffSlidingWindow() {
+  var slidingWindow = document.getElementById('sliding-window');
+  slidingWindow.style.bottom = slidingWindow.style.bottom === '-5%' ? '-100%' : '-100%';
+  var customSlidingWindow = document.getElementById("custom-sliding-window");
+  customSlidingWindow.style.right = customSlidingWindow.style.right === '0px' ? '-101%' : '-101%';
+}
+
+function toggleCustomSlidingWindow() {
+  var customSlidingWindow = document.getElementById("custom-sliding-window");
+  customSlidingWindow.style.right = customSlidingWindow.style.right === '0px' ? '-101%' : '0px';
   var slidingWindow = document.getElementById('sliding-window');
   slidingWindow.style.bottom = slidingWindow.style.bottom === '-5%' ? '-100%' : '-100%';
 }

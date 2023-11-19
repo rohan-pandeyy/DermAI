@@ -31,9 +31,9 @@
 
         <!-- Navigation Bar -->
         <div id="navbar">
-            <img src="upload.png" alt="upload" onclick="turnOffSlidingWindow()">
+            <img src="upload.png" alt="upload" onclick="turnOffSlidingWindow()" >
             <img src="doctor.png" alt="doctor" onclick="toggleSlidingWindow()">
-            <img src="emergency.png" alt="emergency">
+            <img src="emergency.png" alt="emergency" onclick="toggleCustomSlidingWindow()">
         </div>
 
         <!-- Doctor Appointments -->
@@ -75,11 +75,80 @@
                 <!-- Map preview -->
                 <div id="map-preview">
                     <!-- Replace the following with your map embed code -->
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3500.3690114259725!2d77.30462867617214!3d28.678606181985923!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390cfb9fdabb40d9%3A0xc618073a55981ec!2sPerfect%20Tyagi%20Hospital!5e0!3m2!1sen!2sin!4v1700111669565!5m2!1sen!2sin" width="330" height="150" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3500.3690114259725!2d77.30462867617214!3d28.678606181985923!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390cfb9fdabb40d9%3A0xc618073a55981ec!2sPerfect%20Tyagi%20Hospital!5e0!3m2!1sen!2sin!4v1700111669565!5m2!1sen!2sin" width="320" height="150" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </div>
+
+            <!-- Information box -->
+            <div id="information-box">
+                <!-- Circular profile picture -->
+                <div id="profile-picture"></div>
+
+                <!-- Name and Speciality -->
+                <div id="profile-info">
+                  <p id="name">Dr. Anamika Sharma</p>
+                  <p id="speciality">Dermatology, Venereology & Leperology</p>
+                </div>
+
+                <!-- Date and time availability -->
+                <div id="availability-box">
+                    <div id="date-info">
+                        <i class="fa fa-calendar"></i>
+                        <p>Mon, Wed, Sat</p>
+                    </div>
+                    <div id="time-info">
+                        <i class="fa fa-clock-o"></i>
+                        <p>10am - 5pm</p>
+                    </div>
+                </div>
+
+                <!-- Map preview -->
+                <div id="map-preview">
+                    <!-- Replace the following with your map embed code -->
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d112052.81860748345!2d77.22792681344026!3d28.640232738492838!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390cfbe6daa12a0b%3A0xdf64b1d97f8a5e6a!2sLeelawanti%20Skin%20and%20Laser%20Institute%20%7C%20Vaishali%20%7C%20Dermatologist%20%7C%20Best%20Skin%20Specialist!5e0!3m2!1sen!2sin!4v1700371905780!5m2!1sen!2sin" width="320" height="150" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </div>
+
+            <!-- Information box -->
+            <div id="information-box">
+                <!-- Circular profile picture -->
+                <div id="profile-picture"></div>
+
+                <!-- Name and Speciality -->
+                <div id="profile-info">
+                  <p id="name">Dr. Amit Verma</p>
+                  <p id="speciality">Dermatologist</p>
+                </div>
+
+                <!-- Date and time availability -->
+                <div id="availability-box">
+                    <div id="date-info">
+                        <i class="fa fa-calendar"></i>
+                        <p>Mon - Sat</p>
+                    </div>
+                    <div id="time-info">
+                        <i class="fa fa-clock-o"></i>
+                        <p>11am - 6pm</p>
+                    </div>
+                </div>
+
+                <!-- Map preview -->
+                <div id="map-preview">
+                    <!-- Replace the following with your map embed code -->
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d112052.81860748345!2d77.22792681344026!3d28.640232738492838!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390cfbe6daa12a0b%3A0xdf64b1d97f8a5e6a!2sLeelawanti%20Skin%20and%20Laser%20Institute%20%7C%20Vaishali%20%7C%20Dermatologist%20%7C%20Best%20Skin%20Specialist!5e0!3m2!1sen!2sin!4v1700371905780!5m2!1sen!2sin" width="320" height="150" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                 </div>
             </div>
         </div>
 
+        <!--Emergency Tab-->
+        <div id="custom-sliding-window">
+            <div id="custom-close-window" onclick="toggleCustomSlidingWindow()">Close</div>
+            <div id="custom-sliding-content">
+                <!-- Display a PNG image in the center -->
+                <img src="sos.png" alt="Book Ambulance">
+            </div>
+        </div>
+      
     </div>
 </body>
 </html>
