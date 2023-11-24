@@ -105,6 +105,7 @@ body {
   /* Sliding Window */
   #sliding-window {
     position: fixed;
+    overflow: scroll;
     bottom: -100%; /* Initially hide below the screen */
     left: 0;
     width: 100%;
