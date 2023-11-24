@@ -29,7 +29,7 @@ function previewImage() {
       analyzingText.classList.remove('loading');
 
       // Display information text with typewriter effect
-      var informationText = "Based on the _______ examination and patient history, the diagnosis is acne vulgaris.";
+      var informationText = 'First Degree Burn: 63% \nSecond Degree Burn: 37%\n\nRecommended doctors have been updated and can be found in the "Doctor" section.';
       var index = 0;
 
       function printText() {
@@ -41,7 +41,7 @@ function previewImage() {
   }
 
   printText();
-}, 9000);
+}, 2000);
     }
 
     reader.readAsDataURL(file);
