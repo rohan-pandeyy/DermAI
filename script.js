@@ -29,7 +29,7 @@ function previewImage() {
       analyzingText.classList.remove('loading');
 
       // Display information text with typewriter effect
-      var informationText = 'First Degree Burn: 63% \nSecond Degree Burn: 37%\n\nRecommended doctors have been updated and can be found in the "Doctor" section.';
+      var informationText = 'Vitiligo: 94%; Pityriasis Versicolor: 6%;\n\nRecommended doctors have been updated and can be found in the "Doctor" section.';
       var index = 0;
 
       function printText() {
